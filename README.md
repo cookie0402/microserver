@@ -31,3 +31,11 @@ Updating the image used by a deployment:
 ### k8s services:
 1. Cluster IP
 2. Load Balancer
+3. [ingress nginx](https://github.com/kubernetes/ingress-nginx)
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.5.1/deploy/static/provider/cloud/deploy.yaml
+```
+4. [skaffold](https://skaffold.dev/docs/install/#managed-ide):
+```
+skaffold dev
+```
