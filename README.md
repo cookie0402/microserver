@@ -39,3 +39,4 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 ```
 skaffold dev
 ```
+### project update:
