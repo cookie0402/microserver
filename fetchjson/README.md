@@ -87,5 +87,50 @@ console.log(nameAge);
 The structure of the tuple needs to stay the same (a string followed by a number), whereas the array can have any combination of the two types specified (this can be extended to as many types as is required).
 ```
 ### Interface
+```
+interface Vehicle{
+  name:string;
+  year:number;
+  broken:boolean;
 
+}
+must past object meet Vehicle interface 
+```
+function in interface
+```
+interface Vehicle{
+  summary():string;
+
+}
+```
 ### Class and inheritance
+```
+class Vehicle {
+  constructor(public color: string) {} called automically
+
+  protected honk(): void {
+    console.log('beep');
+  }
+}
+
+class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
+
+  private drive(): void {
+    console.log('vroom');
+  }
+
+  startDrivingProcess(): void {
+    this.drive();
+    this.honk();
+  }
+}
+
+co
+```
+class modifier
+*public
+*private only used in class
+*protected only used in class and children class
